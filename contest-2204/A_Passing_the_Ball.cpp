@@ -11,12 +11,14 @@ int32_t main() {
     int t;
     cin >> t;
     while (t--) {
-        int n, i;
-        char c;
+        int n;
+        string s;
         cin >> n;
-        for (i = 0; i < n && cin >> c && c != 'L'; i++) ;
-        cout << i + 1 << '\n';
-        for (++i; i < n && cin >> c; i++) ;
+        cin >> s;
+        int pos = s.find('L');
+        // last character guaranteed to be 'L',
+        // so no need for string::npos check
+        cout << pos + 1 << '\n';
     }
     return 0;
 }
