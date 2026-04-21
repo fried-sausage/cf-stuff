@@ -5,6 +5,18 @@
 using namespace std;
 
 
+int solve(int n, int prev_max, int acc) {
+    if (n == 0) return acc;
+    int curr;
+    cin >> curr;
+    if (prev_max <= curr) {
+        prev_max = curr;
+        ++acc;
+    }
+    return solve(n - 1, prev_max, acc);
+}
+
+
 int32_t main() {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
@@ -13,17 +25,7 @@ int32_t main() {
     while (t--) {
         int n;
         cin >> n;
-        int ops = 0;
-        int prev_max = 0;
-        while (n--) {
-            int curr;
-            cin >> curr;
-            if (prev_max <= curr) {
-                ++ops;
-                prev_max = curr;
-            }
-        }
-        cout << ops << '\n'; 
+        cout << solve(n, 0, 0) << '\n';
     }
     return 0;
 }
