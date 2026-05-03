@@ -1,0 +1,22 @@
+name: Solutions
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  samples:
+    name: Run local samples
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+
+      - name: Check all solutions
+        run: uv run cf-test-all
+        timeout-minutes: 10
