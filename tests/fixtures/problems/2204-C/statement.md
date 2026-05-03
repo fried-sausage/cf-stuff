@@ -1,0 +1,37 @@
+# C. Spring
+
+**Time limit:** per test 2 seconds
+**Memory limit:** per test 512 megabytes
+
+Source: https://codeforces.com/contest/2204/problem/C
+
+Alice, Bob, and Carol visit a spring to collect water. Alice visits every $a$ days (on days $a, 2a, 3a, \dots$), Bob visits every $b$ days (on days $b, 2b, 3b, \dots$), and Carol visits every $c$ days (on days $c, 2c, 3c, \dots$).
+
+When only one person visits, they collect $6$ liters of water. If multiple people visit, the water is divided equally: two people take $3$ liters each, and three people take $2$ liters each.
+
+Your task is to calculate how much water Alice, Bob, and Carol collect over $m$ days, starting from day $1$.
+
+## Input
+
+The first line contains a single integer $t$ ($1 \le t \le 10^4$) — the number of test cases.
+
+The only line of each test case contains four integers $a$, $b$, $c$, and $m$ ($1 \le a, b, c \le 10^6$; $1 \le m \le 10^{17}$).
+
+## Output
+
+For each test case, print three integers — the number of liters of water that Alice, Bob, and Carol collect over $m$ days.
+
+## Note
+
+Consider the first example:
+
+- on day $1$, only Bob visits the spring, and he collects $6$ liters;
+- on day $2$, Alice and Bob visit the spring, and they each collect $3$ liters;
+- on day $3$, Bob and Carol visit the spring, and they each collect $3$ liters;
+- on day $4$, Alice and Bob visit the spring, and they each collect $3$ liters;
+- on day $5$, only Bob visits the spring, and he collects $6$ liters;
+- on day $6$, Alice, Bob, and Carol visit the spring, and they each collect $2$ liters;
+- on day $7$, only Bob visits the spring, and he collects $6$ liters;
+- on day $8$, Alice and Bob visit the spring, and they each collect $3$ liters;
+- on day $9$, Bob and Carol visit the spring, and they each collect $3$ liters;
+- on day $10$, Alice and Bob visit the spring, and they each collect $3$ liters.

@@ -35,10 +35,17 @@
 # Executables
 *.exe
 *.out
+!contest-*/**/tests/*.out
+!tests/fixtures/**/*.out
 *.app
 
 # debug information files
 *.dwo
+
+# Python
+__pycache__/
+*.py[cod]
+.cache/
 
 # Local browser credentials for Codeforces downloads
 cookie.txt
