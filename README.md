@@ -12,3 +12,8 @@ contest-<id>/<problem>/
     sample-1.in
     sample-1.out
 ```
+
+`src` is for different tools that help me
+work with a problem locally
+
+`tests` is for testing those tools

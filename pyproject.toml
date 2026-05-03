@@ -11,6 +11,7 @@ dev = [
 
 [project.scripts]
 cf-download = "cf_stuff.cf_download.cli:main"
+cf-test = "cf_stuff.cf_test.cli:main"
 
 [build-system]
 requires = ["uv_build>=0.9.16,<0.10.0"]
