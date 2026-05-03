@@ -1,0 +1,4 @@
+# Root-relative problem directories to skip in solution CI.
+# Keep this small; committed solutions should usually pass local samples.
+
+contest-2204/G

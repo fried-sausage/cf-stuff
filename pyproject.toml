@@ -12,6 +12,7 @@ dev = [
 [project.scripts]
 cf-download = "cf_stuff.cf_download.cli:main"
 cf-test = "cf_stuff.cf_test.cli:main"
+cf-test-all = "cf_stuff.cf_test.all_cli:main"
 
 [tool.pytest.ini_options]
 testpaths = ["tooling/tests"]

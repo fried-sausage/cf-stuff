@@ -37,6 +37,7 @@
 *.out
 !contest-*/**/tests/*.out
 !tests/fixtures/**/*.out
+!tooling/tests/fixtures/**/*.out
 *.app
 
 # debug information files
@@ -46,6 +47,10 @@
 __pycache__/
 *.py[cod]
 .cache/
+.pytest_cache/
+.venv/
+build/
+dist/
 
 # Local browser credentials for Codeforces downloads
 cookie.txt
