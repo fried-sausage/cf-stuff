@@ -1,5 +1,7 @@
 My solutions to CF problems.
 
+[![Solutions](https://github.com/fried-sausage/cf-stuff/actions/workflows/solutions.yml/badge.svg)](https://github.com/fried-sausage/cf-stuff/actions/workflows/solutions.yml)
+
 ## Layout
 
 Problems are grouped by contest:
