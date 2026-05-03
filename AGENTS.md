@@ -8,6 +8,7 @@ You should follow them.
 
 - YAGNI
 - KISS
+- Don't try to be smart
 - Fail Fast
 - Simplicity over features
 - Correctness over features
